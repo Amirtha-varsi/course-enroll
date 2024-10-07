@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Enrollment System</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Course Enrollment System</h2>
+
+
+    <div class="form-section">
+      <label for="courseName">Course Name:</label>
+      <input type="text" id="courseName" placeholder="Enter course name" />
+
+      <label for="courseCode">Course Code:</label>
+      <input type="text" id="courseCode" placeholder="Enter course code" />
+
+      <button id="addCourseBtn">Add Course</button>
+    </div>
+
+    
+    <div class="form-section">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" placeholder="Enter student name" />
+
+      <label for="selectCourse">Select Course:</label>
+      <select id="selectCourse">
+        <option value="" disabled selected>Select a course</option>
+      </select>
+
+      <button id="enrollBtn">Enroll Student</button>
+    </div>
+
+    <div class="enrollment-list">
+      <h3>Enrolled Students</h3>
+      <div id="enrollmentDisplay"></div>
+    </div>
+  </div>
+
+  <script src="course.js"></script>
+
+</body>
+</html>
